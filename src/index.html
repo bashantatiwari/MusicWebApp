@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beats</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- navbar building start here  -->
+
+    <div id="navbar">
+      <div class="title">
+        <img src="./images/mainLogo.png" alt="Beats Logo" id="logo" />
+        <div class="imageTitle">
+          <h2>Feel the Music</h2>
+        </div>
+      </div>
+      <div class="linkTags">
+        <div class="pages" id="homePage">
+          <a href="#first-page" _blank>Home</a>
+        </div>
+        <div class="pages" id="songsPage">
+          <a href="#second-page" _blank>Songs</a>
+        </div>
+        <div class="pages" id="albumPage">
+          <a href="#third-page" _blank>Album</a>
+        </div>
+        <div class="pages" id="lyricsPage">
+          <a href="#fourth-page" _blank>View</a>
+        </div>
+        <div class="pages" id="aboutPage">
+          <a href="#fifth-page" _blank>About Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar successfully ends here this is a separator comment -->
+
+    <div class="sections">
+      <section id="first-page">
+        <div class="sidebar">
+          <div class="first-page-sidebar-boxes" id="themes-box">
+            <div id="box1-title" id="theme-title" class="sidebar-box-title">
+              <img
+                class="sidebar-icons"
+                src="./images/icons/theme-icon.png "
+                alt="themes-icon"
+              />
+              <p>Themes</p>
+            </div>
+            <div id="themes-content" class="sidebar-box-content">
+              <div id="theme-first-content" class="theme-content">
+                <p style="display: none" id="first_text" class="theme-text">
+                  Applied
+                </p>
+              </div>
+              <div id="theme-second-content" class="theme-content">
+                <p style="display: none" id="second_text" class="theme-text">
+                  Applied
+                </p>
+              </div>
+              <div id="theme-third-content" class="theme-content">
+                <p style="display: none" id="third_text" class="theme-text">
+                  Applied
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="first-page-sidebar-boxes" id="pictures-box">
+            <div id="box2-title" id="pictures-title" class="sidebar-box-title">
+              <img
+                class="sidebar-icons"
+                src="./images/icons/gallery-icon.png "
+                alt="Picture-icon"
+              />
+              <p>Pictures</p>
+            </div>
+            <div id="pictures-content" class="sidebar-box-content">
+              <div id="picture-first-content" class="picture-content">
+                <img
+                  src="images/pictures/boy-image.png"
+                  alt="boy-picture"
+                  class="song-thumbnail"
+                  id="first-pic"
+                />
+                <div class="song-title" id="title_of_first_pic">
+                  Picture of Boy
+                </div>
+              </div>
+              <div id="picture-second-content" class="picture-content">
+                <img
+                  src="images/pictures/girl-image.png"
+                  alt="girl-picture"
+                  class="song-thumbnail"
+                  id="second-pic"
+                />
+                <div class="song-title" id="title_of_second_pic">
+                  Picture of Girl
+                </div>
+              </div>
+              <div id="picture-third-content" class="picture-content">
+                <img
+                  src="images/pictures/cat-image.png"
+                  alt="cat-picture"
+                  class="song-thumbnail"
+                  id="third-pic"
+                />
+                <div class="song-title" id="title_of_third_pic">
+                  Picture of Cat
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="first-page-sidebar-boxes" id="background-changer-box">
+            <div id="background-changer-title" class="sidebar-box-title">
+              <img
+                class="sidebar-icons"
+                src="./images/icons/background-icon.png "
+                alt="background-update-icon"
+              />
+              <p>Backgrounds</p>
+            </div>
+            <div id="background-changer-content" class="sidebar-box-content">
+              <div id="background-first-content" class="background-content">
+                <img
+                  src="images/backgrounds/3third-background.png"
+                  alt="first-background-pic"
+                  class="song-thumbnail"
+                  id="first-background"
+                />
+                <div class="song-title" id="title_of_first_background">
+                  First Background
+                </div>
+              </div>
+              <div id="background-second-content" class="background-content">
+                <img
+                  src="images/backgrounds/5fifth-background.png"
+                  alt="secpond-background-pic"
+                  class="song-thumbnail"
+                  id="second-background"
+                />
+                <div class="song-title" id="title_of_second_background">
+                  Second Background
+                </div>
+              </div>
+              <div id="background-third-content" class="background-content">
+                <img
+                  src="images/backgrounds/6sixth-background.jpg"
+                  alt="third-background-picture"
+                  class="song-thumbnail"
+                  id="third-background"
+                />
+                <div class="song-title" id="title_of_third_background">
+                  Third Background
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mainbar">
+          <video autoplay loop muted play-inline id="backgroundVideo">
+            <source src="./video/" type="video/mp4" />
+          </video>
+          <div class="mainbar-first-part">
+            <img src="images/secondaryLogo.png" alt="secondlogo" />
+            <div class="MoodSuggestionBox">
+              <input
+                type="text"
+                placeholder="Search For Selective Moods"
+                id="frontPageSearch"
+              />
+              <ul id="moodsValue"></ul>
+            </div>
+          </div>
+
+          <div class="mainbar-second-part">
+            <div class="sideText">
+              <p>Feel the Beat</p>
+            </div>
+            <div class="big-image">
+              <img
+                src="./images/boywearingheadphone.png"
+                alt="frontPage-image"
+                id="front-page-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="second-page">
+        <div class="second-page-first-part">
+          <div class="sidebar" id="song-bar">
+            <div class="boxes" id="box1">
+              <div id="box1-title" class="sidebar-box-title">
+                <img
+                  class="sidebar-icons"
+                  src="./images/icons/playlists-icon.png"
+                  alt="playlists-icon"
+                  id="playlistIcons"
+                />
+                <p>Playlists</p>
+              </div>
+              <div id="box1-content" class="sidebar-box-content">
+                <div id="first-song" class="songs-playlists">
+                  <img
+                    src="ThumbnailPic/7.jpg"
+                    alt="aamathumbnail"
+                    class="song-thumbnail"
+                    id="first-song-thumbnail"
+                  />
+                  <div class="ticker-wrap song-title">
+                    <div class="ticker-move">
+                      <p id="first-song-title" class="ticker-item">
+                        Aama by Laxmi Thapa - 14 Dec 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="second-song" class="songs-playlists">
+                  <img
+                    src="ThumbnailPic/4.jpg"
+                    alt="dhairyathumbnail"
+                    class="song-thumbnail"
+                    id="second-song-thumbnail"
+                  />
+                  <div class="ticker-wrap song-title">
+                    <div class="ticker-move">
+                      <p id="second-song-title" class="ticker-item">
+                        Dhairya by Sajjan Raj Vaidya - 21 Oct 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="boxes" id="box2">
+              <div id="box2-title" class="sidebar-box-title">
+                <img
+                  class="sidebar-icons"
+                  src="./images/icons/favorites-icon.png"
+                  alt="favorites-icon"
+                  id="favoriteIcons"
+                />
+                <p>Favorites</p>
+              </div>
+              <div id="box2-content" class="sidebar-box-content">
+                <div id="fifth-song" class="songs-playlists">
+                  <img
+                    src="ThumbnailPic/3.jpg"
+                    alt="phoolthumbnail"
+                    class="song-thumbnail"
+                    id="fifth-song-thumbnail"
+                  />
+                  <div class="ticker-wrap song-title">
+                    <div class="ticker-move">
+                      <p id="fifth-song-title" class="ticker-item">
+                        Phool by Sujan Chapagain - 15 Feb 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="sixth-song" class="songs-playlists">
+                  <img
+                    src="ThumbnailPic/5.jpg"
+                    alt="ratothumbnail"
+                    class="song-thumbnail"
+                    id="sixth-song-thumbnail"
+                  />
+                  <div class="ticker-wrap song-title">
+                    <div class="ticker-move">
+                      <p id="sixth-song-title" class="ticker-item">
+                        Rato ra Chandra Surya by Nepathya - 23 Jul 2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="boxes" id="box3">
+              <div id="box3-title" class="sidebar-box-title">
+                <img
+                  class="sidebar-icons"
+                  src="./images/icons/recent-icon.png"
+                  alt="recent-icon"
+                  id="recentIcon"
+                />
+                <p>Recents</p>
+              </div>
+              <div id="box3-content" class="sidebar-box-content">
+                <div id="fourth-song" class="songs-playlists">
+                  <img
+                    src="ThumbnailPic/6.jpg"
+                    alt="naganyathumbnail"
+                    class="song-thumbnail"
+                    id="fourth-song-thumbnail"
+                  />
+                  <div class="ticker-wrap song-title">
+                    <div class="ticker-move">
+                      <p id="fourth-song-title" class="ticker-item">
+                        Naganya Maya by Sajjan Raj Vaidya - 31 Oct 2021
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="third-song" class="songs-playlists">
+                  <img
+                    src="ThumbnailPic/2.jpg"
+                    alt="ghumithumbnail"
+                    class="song-thumbnail"
+                    id="third-song-thumbnail"
+                  />
+                  <div class="ticker-wrap song-title">
+                    <div class="ticker-move">
+                      <p id="third-song-title" class="ticker-item">
+                        Ghumi Ghumi - A Folk Journey|Sujan Chapagain & Shanti
+                        Shree Pariyar - 9 Apr 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="boxes" id="box4">
+              <div id="box4-title" class="sidebar-box-title">
+                <img
+                  class="sidebar-icons"
+                  src="./images/icons/popular-icon.png"
+                  alt="popular-icon"
+                  id="popularIcon"
+                />
+                <p>Popular</p>
+              </div>
+              <div id="box4-content" class="sidebar-box-content">
+                <div id="first-song" class="songs-playlists">
+                  <img
+                    src="ThumbnailPic/7.jpg"
+                    alt="aamathumbnail"
+                    class="song-thumbnail"
+                    id="first-song-thumbnail"
+                  />
+                  <div class="ticker-wrap song-title">
+                    <div class="ticker-move">
+                      <p id="first-song-title" class="ticker-item">
+                        Aama by Laxmi Thapa - 14 Dec 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="seventh-song" class="songs-playlists">
+                  <img
+                    src="ThumbnailPic/1.jpg"
+                    alt="rukaumaikothumbnail"
+                    class="song-thumbnail"
+                    id="sevent-song-thumbnail"
+                  />
+                  <div class="ticker-wrap song-title">
+                    <div class="ticker-move">
+                      <p id="seventh-song-title" class="ticker-item">
+                        Rukum Maikot by SD Yogi & Shanti Shree Pariyar - 25 Aug
+                        2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-page-second-part">
+          <div class="second-page-second-part-first-content">
+            <img
+              src="images/secondaryLogo.png"
+              alt="secondary-logo"
+              id="third-logo"
+            />
+          </div>
+          <div class="second-page-second-part-second-content">
+            <p>Listen the Beat</p>
+          </div>
+        </div>
+        <div class="second-page-third-part" id="songs-playing-place">
+          <img
+            class="displaying-thumbnail"
+            id="thumbnail-display"
+            src="ThumbnailPic/1.jpg"
+            alt="rukaumaikothumbnail"
+            id="thumbnail-img"
+          />
+          <div class="for-music-control" id="music-control">
+            <input
+              type="range"
+              name=""
+              id="music-range"
+              min="0"
+              value="0"
+              max="100"
+            />
+            <div class="icons">
+              <i class="fas fa-2x fa-step-backward" id="previous"></i>
+              <i class="fas fa-2x fa-play-circle" id="play-music"></i>
+              <i class="fas fa-2x fa-step-forward" id="next"></i>
+            </div>
+          </div>
+          <div class="lists-of-music" id="songsLists">
+            <div id="1" class="play-song">
+              Rukum Maikot by SD Yogi and Shanti Shree Pariyar
+            </div>
+            <div id="2" class="play-song">Ghumi Ghumi by Sujan Chapagain</div>
+            <div id="3" class="play-song">
+              Phool[Ooneko Sweater] by Sujan Chapagain
+            </div>
+            <div id="4" class="play-song">Dhairya by Sajjan Raj vaidya</div>
+            <div id="5" class="play-song">
+              Rato ra Chandra Surya by Nepathya
+            </div>
+            <div id="6" class="play-song">
+              Naganya Maya by Sajjan Raj Vaidya
+            </div>
+            <div id="7" class="play-song">Aama by Laxmi Thapa</div>
+          </div>
+        </div>
+      </section>
+      <section id="third-page">
+        <div class="third-page-first-part">
+          <div class="third-page-first-part-first-content">
+            <img src="images/secondaryLogo.png" alt="Secondary Logo" />
+          </div>
+          <div class="third-page-first-part-second-content">
+            <p>List of the Beat</p>
+          </div>
+        </div>
+        <div class="third-page-second-part">
+          <div class="third-page-second-part-first-content">
+            <input
+              type="text"
+              placeholder="Search songs, playlists, relase date, artists and many more"
+              id="frontPageSearch"
+            />
+          </div>
+          <div class="third-page-second-part-second-content">
+            <div id="first-song-card" class="songs-cards">
+              <img src="" alt="" />
+              <span class="song-card-title"></span>
+              <span class="song-card-singer"></span>
+              <span class="song-card-Views"></span>
+              <span class="song-card-dates"></span>
+            </div>
+            <div id="second-song-card" class="songs-cards">
+              <img src="" alt="" />
+              <span class="song-card-title"></span>
+              <span class="song-card-singer"></span>
+              <span class="song-card-Views"></span>
+              <span class="song-card-dates"></span>
+            </div>
+            <div id="third-song-card" class="songs-cards">
+              <img src="" alt="" />
+              <span class="song-card-title"></span>
+              <span class="song-card-singer"></span>
+              <span class="song-card-Views"></span>
+              <span class="song-card-dates"></span>
+            </div>
+            <div id="fourth-song-card" class="songs-cards">
+              <img src="" alt="" />
+              <span class="song-card-title"></span>
+              <span class="song-card-singer"></span>
+              <span class="song-card-Views"></span>
+              <span class="song-card-dates"></span>
+            </div>
+            <div id="fifth-song-card" class="songs-cards">
+              <img src="" alt="" />
+              <span class="song-card-title"></span>
+              <span class="song-card-singer"></span>
+              <span class="song-card-Views"></span>
+              <span class="song-card-dates"></span>
+            </div>
+            <div id="sixth-song-card" class="songs-cards">
+              <img src="" alt="" />
+              <span class="song-card-title"></span>
+              <span class="song-card-singer"></span>
+              <span class="song-card-Views"></span>
+              <span class="song-card-dates"></span>
+            </div>
+            <div id="seventh-song-card" class="songs-cards">
+              <img src="" alt="" />
+              <span class="song-card-title"></span>
+              <span class="song-card-singer"></span>
+              <span class="song-card-Views"></span>
+              <span class="song-card-dates"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="fourth-page">
+        <div class="fourth-page-first-part">
+          <div class="fourth-page-first-part-first-content">
+            <img src="images/secondaryLogo.png" alt="secondaylogoloading" />
+          </div>
+          <div class="fourth-page-first-part-second-content">
+            <p>View the Beat</p>
+          </div>
+        </div>
+        <div class="fourth-page-second-part">
+          <div class="fourth-page-second-part-first-content">
+            <span id="PlaylistsByAdmin">Playlists</span>
+
+            <div class="realplaylistsBox" id="separatedPlaylists">
+              <div class="realplaylists" id="first-playlist">
+                Heart-Break Songs
+              </div>
+              <div class="realplaylists" id="second-playlist">
+                One-Sided-Love Songs
+              </div>
+              <div class="realplaylists" id="third-playlist">Love Songs</div>
+              <div class="realplaylists" id="fourth-playlist">
+                English Songs
+              </div>
+              <div class="realplaylists" id="fifth-playlist">Nepali Songs</div>
+              <div class="realplaylists" id="sixth-playlist">Hindi Songs</div>
+            </div>
+          </div>
+
+          <div
+            class="fourth-page-second-part-second-content"
+            id="youtube-playlists"
+          >
+            <div class="lists-of-music" id="songsListsForVideoPlay">
+              <span id="close-btn">&#10006;</span>
+              <div id="1" class="play-video">Content--Content</div>
+              <div id="2" class="play-video">Content--Content</div>
+              <div id="3" class="play-video">Content--Content</div>
+              <div id="4" class="play-video">Content--Content</div>
+              <div id="5" class="play-video">Content--Content</div>
+              <div id="6" class="play-video">Content--Content</div>
+              <div id="7" class="play-video">Content--Content</div>
+            </div>
+            <div id="video-player">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/p7wDS1VV3n4?si=Rak555To633H5mwR"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="fifth-page">
+        <div class="fifth-page-contents">
+          <div class="fifth-page-sidebar-content">
+            <div class="fifth-page-sidebar-first-content">
+              <img src="images/secondaryLogo.png" alt="secondaylogoloading" />
+            </div>
+            <div class="fifth-page-sidebar-second-content">
+              <p>About the Beat</p>
+            </div>
+          </div>
+          <div class="fifth-page-mainbar-content">
+            <div class="fifth-page-mainbar-first-content">
+              <p>
+                BEATS: Music Without Barriers—No Login, No Signup, Just Play!
+              </p>
+            </div>
+            <div class="fifth-page-mainbar-second-content">
+              <div class="fifth-page-mainbar-second-content-first-box">
+                <div
+                  id="fifth-page-mainbar-second-content-first-box-first-part"
+                  class="slogon"
+                >
+                  Revolutionize Your Music
+                </div>
+                <div
+                  id="fifth-page-mainbar-second-content-first-box-second-part"
+                  class="slogon"
+                >
+                  Personalized, Seamless, Boundless
+                </div>
+                <div
+                  id="fifth-page-mainbar-second-content-first-box-third-part"
+                  class="slogon"
+                >
+                  Your Feedback Drives
+                </div>
+              </div>
+
+              <div class="fifth-page-mainbar-second-content-second-box">
+                <form
+                  action="https://formspree.io/f/xovqlpgp"
+                  id="feedback-form"
+                  method="post"
+                >
+                  <div class="form-first-part">
+                    <input
+                      type="text"
+                      placeholder="enter full-name"
+                      id="enter-name"
+                      name="name"
+                      class="taking-inputs"
+                      required
+                    />
+                    <input
+                      type="email"
+                      placeholder="someone@gmail.com"
+                      id="enter-email"
+                      name="email"
+                      class="taking-inputs"
+                      required
+                    />
+                    <button type="submit" id="submit-btn">
+                      Submit the FeedBack
+                    </button>
+                  </div>
+                  <div class="form-second-part">
+                    <input
+                      type="text"
+                      placeholder="Always open for Suggestions"
+                      id="enter-suggestion"
+                      class="taking-inputs"
+                      name="text"
+                      required
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="fifth-page-mainbar-second-content-third-box">
+                Tired of barriers, I dreamed of simplicity. BEATs was born to
+                break the login loop and bring music closer to your heart.
+                Customize, vibe, and let the music flow—no interruptions, just
+                pure connection.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- footer building start from here this is a separator comment  -->
+
+    <footer>
+      <div class="footer-first-content">
+        <div class="footer-content1 tab">
+          <div class="footer-content1-title">Follow Beat on Social:</div>
+          <div class="footer-content1-logo">
+            <div class="logo">
+              <a
+                href="https://www.facebook.com/profile.php?id=100068936695302"
+                target="_blank"
+                ><img
+                  src="./images/icons/fb.png"
+                  alt="facebook Logo"
+                  id="fb-icon"
+              /></a>
+            </div>
+            <div class="logo">
+              <a
+                href="https://www.instagram.com/tiwari.bashanta/"
+                target="_blank"
+              >
+                <img
+                  src="./images/icons/insta.png"
+                  alt="Instagram Logo"
+                  id="insta-icon"
+                />
+              </a>
+            </div>
+            <div class="logo">
+              <img
+                src="./images/icons/git.png"
+                alt="Github Logo"
+                id="git-icon"
+              />
+            </div>
+            <div class="logo">
+              <img
+                src="./images/icons/discord.png"
+                alt="Discord Logo"
+                id="discord-icon"
+              />
+            </div>
+            <div class="logo">
+              <img
+                src="./images/icons/whatsapp.png"
+                alt="Whatsapp Logo"
+                id="whatsapp-icon"
+              />
+            </div>
+          </div>
+          <div class="footer-content1-mail">
+            <p>Email: tiwaribashanta9@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-content2 tab">
+          <p>
+            Appreciation for all the singers and the thumbnail creators for
+            giving access to their materials as well as very much thankful
+            towards the creator of canva which helps a lot for building this
+            music web-app
+          </p>
+        </div>
+        <div class="footer-content3 tab">
+          <div class="footer-content3-title">Get the Beat app:</div>
+          <div class="footer-content3-message-logo">
+            <p>For android and ios</p>
+            <img src="./images/icons/beatQr.png" alt="BeatQRImage" />
+          </div>
+          <div class="footer-content3-telephone">tel:[+977 9864453517]</div>
+        </div>
+      </div>
+      <div class="footer-copyright-content">&#169; 2024 by beat.com,inc</div>
+    </footer>
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

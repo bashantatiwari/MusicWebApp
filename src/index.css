@@ -1,0 +1,1091 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --for-background: linear-gradient(180deg, #b89cf5 0%, #e373e5 50%, #fff 100%);
+  --for-boxes-background: linear-gradient(
+    90deg,
+    rgba(91, 16, 88, 0.7) 0%,
+    rgba(193, 33, 186, 0.7) 0.01%,
+    rgba(0, 0, 0, 0.7) 0.02%,
+    rgba(135, 23, 130, 0.7) 98%
+  );
+  --for-body-text-color: white;
+  --for-boxes-text-color: white;
+}
+/* this is body's background color  */
+body {
+  background: var(--for-background);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* body task finished here  */
+
+/* navbar task start from here  */
+#navbar {
+  height: 5vh;
+  min-height: 60px;
+  max-height: 800px;
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url('./images/BackgroundPage.png');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+.imageTitle h2 {
+  color: var(--for-body-text-color);
+  font-family: 'Righteous', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -60px;
+  margin-left: 100px;
+}
+.title {
+  margin-bottom: 10px;
+  height: 60px;
+}
+#logo {
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+#logo:hover {
+  cursor: pointer;
+  height: 55px;
+  width: 55px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+#navbar.linkTags .pages {
+  flex-direction: row;
+}
+.linkTags {
+  display: flex;
+  gap: 10px;
+}
+.pages a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--for-body-text-color);
+  margin-right: 50px;
+}
+/* after hover effect  */
+.pages a:hover {
+  font-size: large;
+  cursor: pointer;
+  border-radius: 12px;
+  background: gainsboro;
+  padding: 8px 24px 8px 24px;
+}
+/* link tags hover effect finished here  */
+
+/* this css will be for center part of the page  */
+.sections {
+  display: flex;
+  flex-direction: column;
+}
+#first-page {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  position: relative;
+}
+#first-page .mainbar {
+  width: 78vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.mainbar .mainbar-first-part {
+  width: 100vw;
+  display: flex;
+  height: 20%;
+}
+#backgroundVideo {
+  position: absolute;
+  right: 0;
+  left: 250px;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+.mainbar-first-part img {
+  width: 12%;
+  height: 95%;
+  border-radius: 50%;
+  margin: 10px 15px 10px 20px;
+}
+.MoodSuggestionBox {
+  margin-left: 30px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.mainbar-first-part #frontPageSearch {
+  height: 50px;
+  width: 100%;
+  border: transparent;
+  padding: 5px;
+  margin-top: 36px;
+  border-radius: 20px;
+  border-radius: 20px;
+  background: var(--for-boxes-background);
+  padding: 10px;
+  font-size: 18px;
+  color: var(--for-boxes-text-color);
+}
+::placeholder {
+  color: var(--for-boxes-text-color);
+}
+
+#moodsValue {
+  display: none;
+  flex-direction: column;
+  margin-top: 6px;
+  list-style-type: none;
+
+  background: var(--for-boxes-background);
+  height: auto;
+  color: white;
+}
+#moodsValue li {
+  padding: 4px;
+  color: var(--for-boxes-text-color);
+  font-size: 16px;
+}
+#moodsValue li:hover {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.mainbar .mainbar-second-part {
+  display: flex;
+  width: 100%;
+}
+.mainbar-second-part .sideText {
+  width: 40%;
+}
+.mainbar-second-part .sideText p {
+  color: var(--for-body-text-color);
+  font-family: Righteous;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.mainbar-second-part .big-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainbar-second-part #front-page-image {
+  margin-top: -30px;
+  width: 70%;
+  width: 550px;
+  height: 500px;
+  margin-left: 90%;
+  margin-bottom: 60px;
+}
+/* here working upon the mainbar ends  */
+/* so here we are working upon the side tabs  */
+#first-page .sidebar {
+  width: 22vw;
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url('./images/BackgroundPage.png');
+  display: flex;
+  flex-direction: column;
+  height: 106.3%;
+  padding: 2px;
+}
+#first-page .first-page-sidebar-boxes {
+  margin-bottom: 30px;
+  height: 24%;
+  margin-top: 15px;
+  padding: 4px;
+}
+
+#themes-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+#themes-content .theme-content {
+  height: 33%;
+  border: 3px solid white;
+  border-radius: 8px;
+  margin: 6px;
+  width: 95%;
+  font-size: large;
+  text-align: center;
+}
+.theme-content .theme-text {
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: 600;
+  padding-top: 12px;
+}
+#themes-content #theme-first-content {
+  background: linear-gradient(180deg, #f5c6a5 0%, #ffffff 50%, #000000 100%);
+}
+
+#themes-content #theme-second-content {
+  background: linear-gradient(180deg, #ff66b2 0%, #66ff66 50%, #9370db 100%);
+}
+#themes-content #theme-third-content {
+  background: linear-gradient(180deg, #000000 0%, #7e7e7e 50%, #ffffff 100%);
+}
+#themes-box {
+  padding-bottom: 10px;
+}
+/* for picture boxes css starts from here  */
+#picture-boxes {
+  height: 100%;
+}
+#pictures-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.picture-content {
+  height: 33%;
+  display: flex;
+  padding: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* backround contents css starts from here  */
+
+.background-content {
+  height: 33%;
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* css for side tab finished here  */
+#second-section {
+  background-color: #000;
+  color: var(--for-boxes-text-color);
+  height: 100%;
+  width: 100%;
+}
+
+/* working upon my songs page  */
+
+#second-page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.second-page-first-part .sidebar {
+  width: 21.1vw;
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url('./images/BackgroundPage.png');
+  height: 106%;
+  display: flex;
+  flex-direction: column;
+  /* height: auto; */
+  padding: 2px;
+}
+.boxes {
+  height: 30%;
+  margin: 10px 2px 10px 2px;
+}
+.sidebar-icons {
+  height: 20px;
+  width: 20px;
+  padding-left: 2px;
+  padding-top: 2px;
+  padding-bottom: -3px;
+  margin-right: 30px;
+}
+
+.sidebar-box-title {
+  height: 20%;
+  border: 1px solid black;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgba(91, 16, 88, 0.7) 0%,
+    rgba(193, 33, 186, 0.7) 0.01%,
+    rgba(0, 0, 0, 0.7) 0.02%,
+    rgba(135, 23, 130, 0.7) 98%
+  );
+  color: var(--for-body-text-color);
+  padding: 4px;
+  text-align: center;
+  display: flex;
+  font-family: Righteous;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 1px 8px 6px 8px;
+  justify-content: left;
+}
+#box1-title:hover {
+  cursor: pointer;
+}
+.sidebar-box-content {
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 0 8px 0 8px;
+  height: auto;
+  color: var(--for-boxes-text-color);
+  background: var(--for-background);
+  text-align: center;
+}
+.songs-playlists {
+  display: flex;
+  height: 12%;
+  width: 95%;
+  justify-content: space-between;
+  margin: 7px;
+  box-sizing: border-box;
+}
+
+.song-thumbnail {
+  width: 30%;
+}
+.song-title {
+  background: var(--for-boxes-background);
+  width: 70%;
+  margin-left: 8px;
+  text-align: left;
+  padding: 10px;
+}
+.ticker-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.ticker-move {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker 20s linear infinite;
+}
+
+/* Individual items */
+.ticker-item {
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-95%);
+  }
+}
+
+#second-page .second-page-second-part {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  /* background: wheat; */
+  height: auto;
+}
+.second-page-second-part-first-content {
+  height: 20%;
+}
+.second-page-second-part-first-content img {
+  width: 50%;
+  height: 100%;
+  border-radius: 50%;
+  margin: 30px 20px 5px 10px;
+}
+.second-page-second-part-second-content p {
+  color: var(--for-body-text-color);
+  /* justify-items: flex-start; */
+  font-family: Righteous;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+#second-page .second-page-third-part {
+  height: 100vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.second-page-third-part .displaying-thumbnail {
+  width: 75%;
+  border: 5px solid white;
+  border-radius: 12px;
+  margin: 10px 40px 10px 80px;
+  height: 35vh;
+}
+#music-control {
+  width: 75%;
+  /* border: 5px solid black; */
+  border-radius: 12px;
+  margin: 5px 40px 5px 80px;
+  background-color: whitesmoke;
+  height: 15vh;
+  color: var(--for-boxes-text-color);
+  background: var(--for-boxes-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#music-control #music-range {
+  margin-top: -8px;
+  margin-bottom: 14px;
+  width: 90%;
+  cursor: pointer;
+  color: var(--for-boxes-text-color);
+}
+
+#songsLists {
+  width: 75%;
+  border-radius: 12px;
+  margin: 5px 40px 5px 80px;
+  height: 50%;
+  background: var(--for-background);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 10px;
+}
+#songsLists .play-song {
+  height: 12%;
+  background: var(--for-boxes-background);
+  color: var(--for-boxes-text-color);
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 20px;
+  margin: 7px;
+  border-radius: 12px;
+  width: 95%;
+}
+.play-song:hover {
+  cursor: pointer;
+}
+
+/* -----------------working on thirdpage-------------------- */
+#third-page {
+  margin-top: 100px;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  flex-direction: row;
+}
+.third-page-first-part {
+  width: 20vw;
+  height: 100vh;
+}
+.third-page-second-part {
+  width: 80vw;
+  height: 100vh;
+}
+.third-page-first-part-first-content {
+  height: 20%;
+}
+.third-page-first-part-first-content img {
+  width: 60%;
+  margin: 10px 20px 5px 20px;
+  height: 100%;
+  border-radius: 50%;
+}
+.third-page-first-part-second-content {
+  height: 80%;
+}
+.third-page-first-part-second-content p {
+  color: var(--for-body-text-color);
+  height: 100%;
+  font-family: Righteous;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 0px;
+}
+.third-page-second-part-first-content {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-page-second-part-first-content input {
+  height: 60%;
+  width: 100%;
+  border: transparent;
+  padding: 5px;
+  margin-left: 2%;
+  margin-top: 36px;
+  margin-right: 11%;
+  border-radius: 20px;
+  border-radius: 20px;
+  background: var(--for-boxes-background);
+  padding: 10px;
+  font-size: 18px;
+  color: var(--for-boxes-text-color);
+  font-weight: bold;
+}
+::placeholder {
+  color: var(--for-boxes-text-color);
+}
+.third-page-second-part-second-content {
+  height: 90vh;
+  width: 86%;
+  margin-left: 2%;
+  margin-right: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+.third-page-second-part-second-content::-webkit-scrollbar {
+  display: none;
+}
+.songs-cards {
+  margin: 20px;
+  width: 25%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  background: var(--for-boxes-background);
+}
+.songs-cards img {
+  height: 50%;
+  width: 100%;
+}
+.songs-cards span {
+  color: var(--for-boxes-text-color);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  height: 10%;
+  margin: 7px;
+}
+
+/* -----css for fourth page ------  */
+
+#fourth-page {
+  height: 100vh;
+  padding-top: 50px;
+  width: 100vw;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.fourth-page-first-part {
+  width: 20vw;
+  height: 100vh;
+}
+.fourth-page-second-part {
+  width: 80vw;
+  padding: 0px;
+  height: 100vh;
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+}
+.fourth-page-first-part-first-content {
+  height: 20%;
+}
+.fourth-page-first-part-first-content img {
+  width: 60%;
+  margin: 30px 20px 5px 20px;
+  height: 100%;
+  border-radius: 50%;
+}
+.fourth-page-first-part-second-content {
+  height: 80%;
+}
+.fourth-page-first-part-second-content p {
+  color: var(--for-body-text-color);
+  height: 100%;
+  font-family: Righteous;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.fourth-page-second-part-first-content {
+  background: var(--for-boxes-background);
+  height: 30%;
+  width: 86%;
+  margin-left: 2%;
+  margin-right: 11%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  color: var(--for-body-text-color);
+}
+.fourth-page-second-part-second-content {
+  background: var(--for-boxes-background);
+  border-radius: 12px;
+  height: 64%;
+  width: 86%;
+  margin-left: 2%;
+  margin-right: 11%;
+  display: flex;
+  flex-direction: row;
+}
+.lists-of-music {
+  width: 45%;
+  border-radius: 12px;
+  margin: 30px 10px 5px 20px;
+  height: 86%;
+  background: var(--for-background);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 10px;
+  z-index: 1;
+}
+.lists-of-music::-webkit-scrollbar {
+  display: none;
+}
+.play-video {
+  height: 25%;
+  background: var(--for-boxes-background);
+  color: var(--for-boxes-text-color);
+  text-align: left;
+  padding: 10px 5px 4px 14px;
+  margin: 7px;
+  border-radius: 14px;
+  width: 95%;
+  font-size: 13px;
+  text-align: left;
+  display: none;
+}
+.play-video:hover {
+  cursor: pointer;
+  font-size: 17px;
+}
+#close-btn {
+  display: none;
+  margin-left: 96%;
+  color: var(--for-boxes-text-color);
+}
+#close-btn:hover {
+  color: red;
+  cursor: pointer;
+}
+#video-player {
+  width: 60%;
+  height: 86%;
+  margin: 30px 20px 5px 10px;
+  border-radius: 8px;
+}
+/* -------playlists design works starts here-------- */
+.fourth-page-second-part-first-content {
+  display: block;
+}
+#PlaylistsByAdmin {
+  background: var(--for-background);
+  width: 30%;
+  height: 5%;
+  padding: 12px;
+  border-radius: 12px;
+  color: var(--for-body-text-color);
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  top: -20px;
+  left: 50px;
+}
+
+.realplaylistsBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  margin-left: 30px;
+}
+.realplaylistsBox .realplaylists {
+  border: 1px solid white;
+  margin: 4px;
+  height: 30%;
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--for-background);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  justify-items: center;
+  align-items: center;
+  padding: 15px 0px 10px 40px;
+  border-radius: 12px;
+}
+.realplaylists:hover {
+  padding-right: 2px;
+  font-size: 25px;
+  cursor: pointer;
+  color: black;
+}
+#Playlists-close-btn {
+  margin-left: 82%;
+}
+#Playlists-close-btn:hover {
+  cursor: pointer;
+  color: red;
+  font-size: larger;
+}
+
+/* Working upon the fifth_page  */
+#fifth-page {
+  margin-top: 100px;
+  /* padding-top: 50px; */
+  display: none;
+}
+.fifth-page-contents {
+  /* border: 2px solid black; */
+  display: flex;
+}
+.fifth-page-sidebar-content {
+  width: 20vw;
+  height: 100vh;
+}
+.fifth-page-sidebar-first-content {
+  height: 20%;
+}
+.fifth-page-sidebar-first-content img {
+  width: 60%;
+  margin: 30px 20px 5px 20px;
+  height: 100%;
+  border-radius: 50%;
+}
+.fifth-page-sidebar-second-content {
+  height: 80%;
+}
+.fifth-page-sidebar-second-content p {
+  color: var(--for-body-text-color);
+  height: 100%;
+  font-family: Righteous;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.fifth-page-mainbar-content {
+  width: 80vw;
+  height: 95vh;
+  margin-left: 5%;
+  /* border: 5px solid white; */
+  display: flex;
+  flex-direction: row;
+}
+.fifth-page-mainbar-first-content {
+  background: var(--for-boxes-background);
+  width: 10%;
+  height: 100%;
+
+  /* margin-top: 15px; */
+}
+.fifth-page-mainbar-first-content p {
+  writing-mode: vertical-lr;
+  font-size: 20px;
+  /* padding-top: 0%; */
+  padding: 30%;
+  font-family: Righteous;
+  color: var(--for-boxes-text-color);
+}
+.fifth-page-mainbar-second-content {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+}
+.fifth-page-mainbar-second-content-first-box {
+  width: 100%;
+  height: 25%;
+
+  background: var(--for-boxes-background);
+  color: var(--for-boxes-text-color);
+}
+.slogon {
+  height: 33%;
+  font-family: Righteous;
+  font-size: 26px;
+  text-align: center;
+  padding: 5px;
+}
+.fifth-page-mainbar-second-content-second-box {
+  height: 40%;
+}
+#feedback-form {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: var(--for-background);
+}
+#feedback-form .form-first-part {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 50%;
+}
+#feedback-form .form-second-part {
+  display: flex;
+  margin: 10px;
+  width: 50%;
+}
+.form-first-part input {
+  margin: 20px;
+  height: 15%;
+  width: 80%;
+  font-size: large;
+  padding: 10px;
+}
+.taking-inputs::placeholder {
+  color: black;
+}
+.form-second-part input {
+  margin: 20px;
+  height: 75%;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+}
+#submit-btn {
+  margin: 20px;
+  height: 15%;
+  width: 80%;
+  font-size: large;
+}
+#submit-btn:hover {
+  cursor: pointer;
+  background: var(--for-boxes-background);
+  color: var(--for-boxes-text-color);
+  font-size: 24px;
+}
+.fifth-page-mainbar-second-content-third-box {
+  height: 35%;
+  background: var(--for-boxes-background);
+  text-align: center;
+  font-size: 24px;
+  font-family: Righteous;
+
+  color: var(--for-boxes-text-color);
+  padding: 50px;
+}
+/* working on my footer  */
+footer {
+  height: 30%;
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url('./images/BackgroundPage.png');
+  color: white;
+  padding: 20px;
+  width: 100vw;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  top: 50px;
+}
+.footer-first-content {
+  display: flex;
+  justify-content: space-between;
+}
+footer .tab {
+  width: 30%;
+
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3));
+}
+/* footer first content  */
+.footer-content1-title {
+  background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2));
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 36px;
+  padding: 5px;
+  text-align: left;
+}
+.footer-content1-logo {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 16px;
+}
+.footer-content1-mail {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 5px;
+}
+.footer-content2 {
+  color: #fff;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 6px;
+}
+.footer-content3-title {
+  background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2));
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 36px;
+  padding: 5px;
+  text-align: left;
+}
+.footer-content3-message-logo {
+  display: flex;
+  width: 100%;
+}
+.footer-content3-message-logo p {
+  width: 60%;
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+.footer-content3-message-logo img {
+  width: 40%;
+  height: 80px;
+  width: 80px;
+  justify-content: right;
+}
+.footer-content3-telephone {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 5px;
+  text-align: left;
+}
+/* footer second content  */
+.footer-copyright-content {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 10px;
+}
+#fb-icon:hover {
+  background: #1877f2;
+  padding: 4px;
+  border-radius: 6px;
+}
+#insta-icon:hover {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  padding: 4px;
+  border-radius: 6px;
+}
+#git-icon:hover {
+  background-color: #000;
+  padding: 4px;
+  border-radius: 6px;
+}
+#discord-icon:hover {
+  background-color: #1992ef;
+  padding: 4px;
+  border-radius: 6px;
+}
+#whatsapp-icon:hover {
+  background-color: #25d366;
+  padding: 4px;
+  border-radius: 6px;
+}
+/* footer parts ends here  */
+
+/* ------ scrollbar for the page -------  */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: var(--for-boxes-background);
+  margin: 2px;
+  border-radius: 12px;
+}
+::-webkit-scrollbar-thumb {
+  border: 1px solid black;
+  background: var(--for-background);
+  padding: auto;
+  border-radius: 12px;
+}
